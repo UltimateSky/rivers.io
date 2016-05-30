@@ -1394,6 +1394,12 @@ img {
     height: auto
 }
 
+.img-me {
+    display: block;
+    max-width: 360px;
+    height: auto
+}
+
 .img-rounded {
     border-radius: 6px
 }
