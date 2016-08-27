@@ -382,8 +382,6 @@ header {
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
-    max-width: 100%;
-	height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
