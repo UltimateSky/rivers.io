@@ -31,9 +31,18 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script>
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
 </head>
 
 <body id="page-top" class="index">
+    <div class="se-pre-con"></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -83,7 +92,8 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome! I'm Charles</div>
+                <div class="intro-lead-in">Welcome!</div>
+                <div class="intro-name">I'm <a class="link link--kukuri" data-letters="Charles">Charles</a></div>
                 <div class="intro-heading">What can I make for you?</div>
                 <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
@@ -201,7 +211,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         Graphic Design
-                        <div class="item graphic">
+                        <div class="item ninety">
                             <h2>90%</h2>
                             <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -210,12 +220,13 @@
                                 </g>
                             </svg>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
                         Video Editing
-                        <div class="item video">
+                        <div class="item eighty">
                             <h2>80%</h2>
                             <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -229,7 +240,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         Android Development
-                        <div class="item android">
+                        <div class="item fifty">
                             <h2>50%</h2>
                             <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -247,8 +258,8 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         HTML
-                        <div class="item html">
-                            <h2>75%</h2>
+                        <div class="item eighty">
+                            <h2>80%</h2>
                             <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <title>Layer 1</title>
@@ -261,7 +272,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         CSS
-                        <div class="item css">
+                        <div class="item seventy">
                             <h2>70%</h2>
                             <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -275,8 +286,8 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         Javascript
-                        <div class="item js">
-                            <h2>45%</h2>
+                        <div class="item fifty">
+                            <h2>50%</h2>
                             <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <title>Layer 1</title>
@@ -287,12 +298,12 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
                         Java
-                        <div class="item java">
+                        <div class="item seventy">
                             <h2>70%</h2>
                             <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -306,7 +317,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         C#
-                        <div class="item csharp">
+                        <div class="item sixty">
                             <h2>60%</h2>
                             <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -320,7 +331,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         SQL
-                        <div class="item sql">
+                        <div class="item fifty">
                             <h2>50%</h2>
                             <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -829,6 +840,10 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+
+
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
