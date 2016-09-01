@@ -1,3 +1,81 @@
+/*Loader CSS*/
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/Preloader.gif) center no-repeat #fff;
+}
+/* End Loader */
+/* Hover Effect */
+
+/* Before */
+.link {
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 1;
+    color: white;
+    display: inline-block;
+}
+
+.link--kukuri {
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 0.75;
+    color: white;
+}
+
+.link--kukuri:hover {
+    color: white;
+}
+
+/* bar color */
+.link--kukuri::after {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 100%;
+    top: 50%;
+    margin-top: -8px;
+    margin-right: 1px;
+    right: 0;
+    background: #b2b0a9;
+    transform: translate3d(-105%,0,0);
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+    transform: translate3d(105%,0,0);
+}
+
+/* After color */
+.link--kukuri::before {
+    content: attr(data-letters);
+    outline: none;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    color: #03a9f4;
+    white-space: nowrap;
+    width: 0%;
+    transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+    width: 100%;
+}
+/* End Hover */
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -27,156 +105,88 @@ svg {
     stroke-dashoffset: 440;
 }
 
-.graphic .circle_animation {
-    -webkit-animation: graphic 1s ease-out forwards;
-    animation: graphic 1s ease-out forwards;
+.ninety .circle_animation {
+    -webkit-animation: ninety 1s ease-out forwards;
+    animation: ninety 1s ease-out forwards;
 }
 
-.android .circle_animation {
-    -webkit-animation: android 1s ease-out forwards;
-    animation: android 1s ease-out forwards;
+.eighty .circle_animation {
+    -webkit-animation: eighty 1s ease-out forwards;
+    animation: eighty 1s ease-out forwards;
 }
 
-.video .circle_animation {
-    -webkit-animation: video 1s ease-out forwards;
-    animation: video 1s ease-out forwards;
+.seventy .circle_animation {
+    -webkit-animation: seventy 1s ease-out forwards;
+    animation: seventy 1s ease-out forwards;
 }
 
-.java .circle_animation {
-     -webkit-animation: java 1s ease-out forwards;
-     animation: java 1s ease-out forwards;
- }
-
-.csharp .circle_animation {
-    -webkit-animation: csharp 1s ease-out forwards;
-    animation: csharp 1s ease-out forwards;
+.sixty .circle_animation {
+    -webkit-animation: sixty 1s ease-out forwards;
+    animation: sixty 1s ease-out forwards;
 }
 
-.sql .circle_animation {
-    -webkit-animation: sql 1s ease-out forwards;
-    animation: sql 1s ease-out forwards;
+.fifty .circle_animation {
+    -webkit-animation: fifty 1s ease-out forwards;
+    animation: fifty 1s ease-out forwards;
 }
 
-.html .circle_animation {
-    -webkit-animation: html 1s ease-out forwards;
-    animation: html 1s ease-out forwards;
-}
-
-.css .circle_animation {
-    -webkit-animation: css 1s ease-out forwards;
-    animation: css 1s ease-out forwards;
-}
-
-.js .circle_animation {
-    -webkit-animation: js 1s ease-out forwards;
-    animation: js 1s ease-out forwards;
-}
-
-@-webkit-keyframes graphic {
+@-webkit-keyframes ninety {
     to {
         stroke-dashoffset: 44;
     }
 }
 
-@keyframes graphic {
+@keyframes ninety {
     to {
         stroke-dashoffset: 44;
     }
 }
 
-@-webkit-keyframes video {
+@-webkit-keyframes eighty {
     to {
         stroke-dashoffset: 88;
     }
 }
 
-@keyframes video {
+@keyframes eighty {
     to {
         stroke-dashoffset: 88;
     }
 }
 
-@-webkit-keyframes android {
+@-webkit-keyframes seventy {
     to {
-        stroke-dashoffset: 220;
+        stroke-dashoffset: 132;
     }
 }
 
-@keyframes android {
+@keyframes seventy {
     to {
-        stroke-dashoffset: 220;
+        stroke-dashoffset: 132;
     }
 }
 
-@-webkit-keyframes java {
+@-webkit-keyframes sixty {
     to {
         stroke-dashoffset: 176;
     }
 }
 
-@keyframes java {
-    to {
-        stroke-dashoffset: 132;
-    }
-}
-
-@-webkit-keyframes csharp {
-    to {
-        stroke-dashoffset: 132;
-    }
-}
-
-@keyframes csharp {
+@keyframes sixty {
     to {
         stroke-dashoffset: 176;
     }
 }
 
-@-webkit-keyframes sql {
+@-webkit-keyframes fifty {
     to {
         stroke-dashoffset: 220;
     }
 }
 
-@keyframes sql {
+@keyframes fifty {
     to {
         stroke-dashoffset: 220;
-    }
-}
-
-@-webkit-keyframes html {
-    to {
-        stroke-dashoffset: 110;
-    }
-}
-
-@keyframes html {
-    to {
-        stroke-dashoffset: 110;
-    }
-}
-
-@-webkit-keyframes css {
-    to {
-        stroke-dashoffset: 132;
-    }
-}
-
-@keyframes css {
-    to {
-        stroke-dashoffset: 132;
-    }
-}
-
-@-webkit-keyframes js {
-    to {
-        stroke-dashoffset: 242;
-    }
-}
-
-@keyframes js {
-    to {
-        stroke-dashoffset: 242;
     }
 }
 /*
@@ -408,7 +418,6 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-image: url(../img/header.jpg);
-    background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
     -webkit-background-size: cover;
@@ -446,6 +455,14 @@ header .intro-text .intro-heading {
     margin-bottom: 25px
 }
 
+header .intro-name {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serifssss;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 50px;
+    margin-bottom: 25px
+}
+
 @media (min-width: 768px) {
     header .intro-text {
         padding-top: 300px;
@@ -477,6 +494,15 @@ header .intro-text .intro-heading {
         animation-duration: 3s;
         animation-name: slidein;
 
+    }
+
+    header .intro-name {
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 75px;
+        line-height: 50px;
+        margin-bottom: 25px;
     }
 
 
